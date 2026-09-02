@@ -31,7 +31,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 0px;
 }
 h2 {
   margin: 0;
@@ -41,6 +41,7 @@ h2 {
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #f9f8f8;
+
 }
 
 .content > p {
@@ -80,7 +81,7 @@ h2 {
   color: #000000;
   font-size: 1rem;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 0px 20px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 100px;
@@ -161,4 +162,60 @@ nav h1 {
 .nav-li a:hover {
   background: #000;
   color: #fff;
+}
+/* Portfolio styles */
+.content h1 {
+  color: rgb(255, 255, 255);
+}
+
+#portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#portfolio li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#portfolio a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #0c0c0c;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid #5d27b4;
+  border-radius: 20px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+#portfolio a:hover {
+  background: #000;
+  color: #fff;
+  transform: translateX(4px);
+}
+
+#portfolio a::after {
+  content: "->";
+  font-size: 0.85rem;
+  opacity: 0.4;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+#portfolio a:hover::after {
+  opacity: 1;
+}
+/* Portfolio styles */
+.content h3 {
+  color: rgb(195, 100, 242);
 }
