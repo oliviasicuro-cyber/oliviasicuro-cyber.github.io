@@ -27,25 +27,38 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-     toggleGrid();
+    //  toggleGrid();
 
 
     // TODO 2 - Create Platforms
 
-createPlatform(200, 600, 200, 100, "#a66be1");
-createPlatform(500, 500, 200, 100, "#376427");
-
-
+createPlatform(0, 600, 200, 25, "#a66be1");
+createPlatform(400, 500, 200, 25, "#376427");
+createPlatform(600, 400, 200, 25, "#a66be1");
+createPlatform(900, 500, 200, 25, "#376427");
+createPlatform(1200, 600, 200, 25, "#a66be1");
+createPlatform(420, 300, 105, 25, "#376427");
+createPlatform(150, 200, 200, 25, "#a66be1");
+createPlatform(650, 200, 100, 25, "#a66be1");
+createPlatform(900, 200, 200, 25, "#376427");
+createPlatform(1200, 300, 200, 25, "#a66be1");
+createPlatform(600, 625, 300, 25, "#a66be1");
+createPlatform(0, 450, 200, 25, "#a66be1");
     // TODO 3 - Create Collectables
-
-
-
-    
+createCollectable("books", 750, 550, 0.5, 0.7);
+createCollectable("books", 1300, 170, 0.5, 0.7);
+createCollectable("books", 200, 150, 0.5, 0.7);
+createCollectable("flower", 700, 150, 0.5, 0.7);
+createCollectable("flower", 500, 450, 0.5, 0.7);
+createCollectable("flower", 1300, 550, 0.5, 0.7);
+createCollectable("flower", 100, 550, 0.5, 0.7);
     // TODO 4 - Create Cannons
-
-
-    
-    
+createCannon("top", 300, 2500);
+createCannon("right", 300, 2000);
+createCannon("right", 550, 3500);
+createCannon("top", 1000, 2000);
+createCannon("left", 685, 0);
+createCannon("right", 800, 0);
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
