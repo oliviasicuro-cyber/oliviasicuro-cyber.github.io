@@ -5,15 +5,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black
 }
 
 canvas {
-  background-color: lightblue;
-  margin: 20px;
+ background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy9OQ8qnosoUByiZ8nbCNnQVagtcH7cBlfvCGQ2EDMeg&s=10);
+  background-repeat: no-repeat;
+  background-size: cover; /* stretches the image to fill the screen */
+  background-position: center; /* centers the image */
+  margin: 10px;
   border-radius: 15px;
-  border: 5px solid rgba(118, 0, 233, 0.375);
+  border: 5px solid rgba(0, 0, 0, 0.375);
 }
 
 img {
-  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/052/156/835/small/full-moon-above-clouds-night-sky-starry-background-photo.jpg")
+  display:none
 } 
