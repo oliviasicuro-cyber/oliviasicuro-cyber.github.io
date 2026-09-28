@@ -34,8 +34,8 @@ $(function () {
 
 createPlatform(0, 600, 200, 25, "#ebb8a3");
 createPlatform(400, 500, 200, 25, "#ebb8a3");
-// createPlatform(600, 400, 200, 25, "#576c78");
-createPlatform(600, 400, 200, 25, "#576c78", 600, 1000, 2, 350, 350, 0)
+createPlatform(600, 400, 200, 25, "#576c78");
+// createPlatform(600, 400, 200, 25, "#576c78", 600, 1000, 2, 350, 350, 0)
 createPlatform(900, 500, 200, 25, "#ebb8a3");
 createPlatform(1200, 625, 200, 25, "#576c78");
 createPlatform(420, 300, 105, 15, "#ebb8a3");
