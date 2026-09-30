@@ -40,9 +40,10 @@ createPlatform(900, 500, 200, 25, "#ebb8a3");
 createPlatform(1200, 625, 200, 25, "#576c78");
 createPlatform(420, 300, 105, 15, "#ebb8a3");
 createPlatform(150, 200, 200, 25, "#576c78");
-createPlatform(650, 200, 100, 25, "#576c78");
-// createPlatform(900, 200, 200, 25, "#ebb8a3");
-createPlatform(900, 200, 200, 25, "#ebb8a3", 850, 1000, 2, 200, 200, 0)
+// createPlatform(650, 200, 100, 25, "#576c78");
+createPlatform(650, 200, 100, 25, "#576c78", 400, 700, 2, 200, 200, 1)
+createPlatform(900, 200, 200, 25, "#ebb8a3");
+// createPlatform(900, 200, 200, 25, "#ebb8a3", 850, 1000, 2, 200, 200, 0)
 createPlatform(1200, 300, 200, 25, "#576c78");
 createPlatform(600, 625, 300, 25, "#576c78");
 createPlatform(0, 400, 200, 25, "#576c78");
@@ -52,7 +53,8 @@ createBadPlatform(0, 725, 1400, 20, "#ebb8a3")
 createCollectable("books", 750, 550, 0.5, 0.7);
 createCollectable("books", 1250, 170, 0.5, 0.7);
 createCollectable("books", 200, 150, 0.5, 0.7);
-createCollectable("flower", 700, 150, 0.5, 0.7);
+// createCollectable("flower", 700, 150, 0.5, 0.7);
+createCollectable("flower", 700, 150, 0, 1, 400, 700, 1);
 createCollectable("flower", 500, 450, 0.5, 0.7);
 createCollectable("flower", 1300, 550, 0.5, 0.7);
 createCollectable("flower", 100, 550, 0.5, 0.7);
