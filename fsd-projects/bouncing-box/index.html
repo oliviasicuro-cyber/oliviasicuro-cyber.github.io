@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html >
   <head>
     <meta charset="utf-8" />
     <title>Bouncing Box</title>
@@ -8,7 +8,8 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-color: rgb(102, 9, 123);
+        background-image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV5zV4sDuIx3O5CcJ4GYy5acwv-UnHwUrfTncbQUGCGw&s=10 ";
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -16,9 +17,8 @@
         position: absolute;
         top: 100px;
         /* Change me! */
-        left: 0px;
+        left: 3px;
       }
-
       .board {
         height: 100vh;
       }
@@ -26,9 +26,9 @@
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
   </head>
 
-  <body class="board">
+  <body class="board" >
     <!-- HTML for the box -->
-    <div class="box">?</div>
+    <div class="box" >?</div>
 
     <script>
       (function () {
@@ -42,7 +42,9 @@
         var box = jQuery(".box"); // reference to the HTML .box element
         var board = jQuery(".board"); // reference to the HTML .board element
         var boardWidth = board.width(); // the maximum X-Coordinate of the screen
-
+        var positionX = 0;
+        var points = 0;
+        var speed = 10;
         // update the boardWidth variable when the window is resized
         jQuery(window).on("resize", function () {
           boardWidth = board.width();
@@ -80,10 +82,13 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
+        moveBoxTo(positionX);
+        positionX += speed;
 
-        
-
-          
+          if(positionX > boardWidth)
+          speed *= -1
+        if(positionX < 0)
+        speed *= -1
         }
 
         /**
@@ -94,7 +99,10 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
-
+          positionX = 0
+          points ++;
+        speed = 3 * points + 10
+          changeBoxText(points)
 
 
 
