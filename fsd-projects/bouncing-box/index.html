@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="utf-8" />
     <title>Bouncing Box</title>
@@ -8,8 +8,7 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: rgb(102, 9, 123);
-        background-image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV5zV4sDuIx3O5CcJ4GYy5acwv-UnHwUrfTncbQUGCGw&s=10 ";
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmfxvh8ju-gbb5OFpOuYBz664ykrD38I4iRY7xG1uHgg&s=10");
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -26,9 +25,10 @@
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
   </head>
 
-  <body class="board" >
+  <body class="board"
+    background-image: url("https://miro.medium.com/1*YuIWTyF_WGSa9d-gQfcX2g.jpeg");>
     <!-- HTML for the box -->
-    <div class="box" >?</div>
+    <div class="box">?</div>
 
     <script>
       (function () {
@@ -42,7 +42,7 @@
         var box = jQuery(".box"); // reference to the HTML .box element
         var board = jQuery(".board"); // reference to the HTML .board element
         var boardWidth = board.width(); // the maximum X-Coordinate of the screen
-        var positionX = 0;
+     
         var points = 0;
         var speed = 10;
         // update the boardWidth variable when the window is resized
@@ -72,7 +72,7 @@
 
         // TODO 2 - Variable declarations
 
-
+   var positionX = 0;
 
 
 
